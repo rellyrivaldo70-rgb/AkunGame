@@ -1,0 +1,44 @@
+body {
+  font-family: Arial;
+  background:#f2f2f2;
+  padding:15px;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+}
+
+.card {
+  background:#fff;
+  padding:10px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.card img {
+  width:100%;
+  border-radius:10px;
+}
+
+.available { color:green; font-weight:bold }
+.sold { color:red; font-weight:bold }
+
+.detail-img {
+  width:100%;
+  border-radius:10px;
+}
+
+.btn {
+  display:block;
+  margin:10px 0;
+  padding:12px;
+  text-align:center;
+  color:#fff;
+  text-decoration:none;
+  border-radius:8px;
+}
+
+.wa { background:#25D366 }
+.tg { background:#0088cc }
