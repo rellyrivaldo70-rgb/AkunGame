@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Detail Akun</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js"></script>
+</head>
+<body>
+
+<div id="detail"></div>
+
+<script>
+const id = new URLSearchParams(window.location.search).get("id");
+const a = akun.find(x => x.id == id);
+
+const pesan = encodeURIComponent(
+  `min mau beli ${a.judul}\nHarga: ${a.harga}`
+);
+
+document.getElementById("detail").innerHTML = `
+<img src="${a.gambar}" class="detail-img">
+<h2>${a.judul}</h2>
+<p>${a.deskripsi}</p>
+<h3>${a.harga}</h3>
+
+${a.status === "available" ? `
+<a class="btn wa" href="https://wa.me/${whatsapp}?text=${pesan}">WhatsApp</a>
+<a class="btn tg" href="https://t.me/${telegram}?text=${pesan}">Telegram</a>
+` : `<p class="sold">AKUN SUDAH TERJUAL</p>`}
+
+<br><br>
+<a href="index.html">⬅ Back</a>
+`;
+</script>
+
+</body>
+</html>
