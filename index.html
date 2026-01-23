@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jual Beli Akun Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js"></script>
+</head>
+<body>
+
+<h2>Jual Beli Akun Game</h2>
+
+<div class="grid" id="list"></div>
+
+<script>
+const list = document.getElementById("list");
+
+akun.forEach(a => {
+  list.innerHTML += `
+  <div class="card">
+    <a href="detail.html?id=${a.id}">
+      <img src="${a.gambar}">
+      <h3>${a.judul}</h3>
+      <p>${a.harga}</p>
+      <span class="${a.status}">
+        ${a.status === "available" ? "Available" : "SOLD"}
+      </span>
+    </a>
+  </div>`;
+});
+</script>
+
+</body>
+</html>
