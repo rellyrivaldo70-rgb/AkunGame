@@ -1,0 +1,41 @@
+{
+  "serverId": "netral-rp",
+  "serverName": "NETRAL Roleplay",
+  "host": "123.123.123.123:7777",
+  "manifestVersion": 1,
+  "publishedAt": "2026-05-08T08:36:26.041Z",
+  "clientVersion": "0.1.0",
+  "modCount": 2,
+  "mods": [
+    {
+      "id": "skin-cj-streetwear",
+      "name": "CJ Streetwear Skin",
+      "version": "1.0.0",
+      "category": "skin",
+      "fileName": "cj-streetwear-skin.zip",
+      "size": 657,
+      "hash": "faa54968a98d393911bb22613a71ffce44655d1c73a909a554b0db9f394d393d",
+      "required": true,
+      "priority": 100,
+      "compression": "zip",
+      "installPath": "skin/cj-streetwear-skin.zip",
+      "url": "https://domainkamu.com/netralhub/netral-rp/files/skin/cj-streetwear-skin.zip",
+      "description": "Template paket skin CJ bergaya streetwear untuk contoh static manifest NETRALHUB."
+    },
+    {
+      "id": "vehicle-elegy-retro",
+      "name": "Elegy Retro Pack",
+      "version": "1.0.0",
+      "category": "vehicle",
+      "fileName": "elegy-retro-pack.zip",
+      "size": 748,
+      "hash": "5c2ea0bd143ab0f637b4f32e5fe0bfd75cef74daac2bcaf1bb4253a9eb9d4a0e",
+      "required": true,
+      "priority": 110,
+      "compression": "zip",
+      "installPath": "vehicle/elegy-retro-pack.zip",
+      "url": "https://domainkamu.com/netralhub/netral-rp/files/vehicle/elegy-retro-pack.zip",
+      "description": "Template paket kendaraan Elegy Retro untuk contoh static manifest NETRALHUB."
+    }
+  ]
+}
